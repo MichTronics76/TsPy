@@ -131,7 +131,7 @@ def on_text_message(server_id, from_id, to_id, target_mode, message):
 
 ## 🎤 Audio Monitor
 
-The included `audio_monitor.py` script provides a real-time audio monitoring UI:
+The `audio_monitor.py` example script provides a real-time audio monitoring UI:
 
 ### Features
 - **VU Meter** - Real-time microphone level visualization (-60dB to 0dB)
@@ -140,6 +140,13 @@ The included `audio_monitor.py` script provides a real-time audio monitoring UI:
 - **Talk Status** - Live list of currently talking clients with indicators
 
 ### Usage
+
+First, copy the example to your scripts folder:
+```powershell
+Copy-Item "examples\audio_monitor.py" "$env:APPDATA\TS3Client\plugins\scripts\"
+```
+
+Then load it in TeamSpeak:
 ```
 /tspy python load audio_monitor
 ```
@@ -150,6 +157,15 @@ A PyGame window opens showing real-time audio monitoring. Press ESC or close the
 ```powershell
 pip install pygame
 ```
+
+## 📚 More Examples
+
+Check the `examples/` directory for more Python scripts:
+- **auto_greeter.py** - Automatic welcome messages
+- **callsign_logger.py** - Ham radio callsign logger
+- **hello_world.py** - Basic example script
+
+See `examples/README.md` for detailed documentation.
 
 ## ⚙️ Commands
 
@@ -204,8 +220,14 @@ TsPy/
 │       └── string_utils.c/h
 │
 ├── scripts/                       # Python scripts location
-│   ├── tspy_init.py              # Auto-loaded on startup
-│   └── audio_monitor.py          # Audio monitoring UI
+│   └── tspy_init.py              # Auto-loaded on startup
+│
+├── examples/                      # Example Python scripts
+│   ├── README.md                 # Examples documentation
+│   ├── audio_monitor.py          # Audio monitoring UI
+│   ├── auto_greeter.py           # Welcome message bot
+│   ├── callsign_logger.py        # Ham radio callsign logger
+│   └── hello_world.py            # Basic example
 │
 └── resources/                     # Resources
     └── icons/                     # Plugin icons
