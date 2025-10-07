@@ -1,0 +1,69 @@
+.DS_Store
+# Build directories
+build/
+out/
+bin/
+lib/
+install/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+*.cmake
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+
+# IDE specific
+.vscode/
+.idea/
+*.code-workspace
+
+# Compiled files
+*.dll
+*.so
+*.dylib
+*.o
+*.obj
+*.a
+*.lib
+*.exp
+*.pdb
+*.ilk
+*.idb
+
+# Temporary files
+*.log
+*.tmp
+*~
+*.bak
+*.swp
+
+# OS specific
+Thumbs.db
+.DS_Store
+Desktop.ini
+
+# Documentation build
+docs/_build/
+site/
+
+# Python (if used for scripts)
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Package files
+*.zip
+*.tar.gz
+*.rar
+
+# Local configuration
+local_config.ini
+.env
